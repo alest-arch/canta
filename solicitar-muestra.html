@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Solicita muestras físicas de Norwood Linear, Heritage o Aegis. Envío gratuito a estudios de arquitectura y especificadores en Europa." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Solicitar muestra — Norwood Acoustics</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav is-scrolled" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark">N</span>
+        <span class="nav__logo-text">NORWOOD<small>ACOUSTICS</small></span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#solucion">Soluciones</a>
+        <a href="index.html#productos">Productos</a>
+        <a href="certificaciones.html">Certificaciones</a>
+        <a href="proceso.html">Proceso</a>
+        <a href="index.html#contacto" class="nav__cta">Solicitar presupuesto</a>
+      </nav>
+      <button class="nav__burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Inicio</a><span>/</span>
+        <span aria-current="page">Solicitar muestra</span>
+      </nav>
+      <p class="eyebrow">Recursos</p>
+      <h1 class="page-hero__title">Toca, ve y escucha el material antes de decidir.</h1>
+      <p class="lead">
+        Enviamos muestras físicas reales —no impresas— de cada una de nuestras
+        tres líneas. Cada kit incluye una pieza del sustrato seleccionado, un
+        recorte del patrón acústico y, en su caso, un fragmento del velo
+        técnico que va por detrás del panel. Servicio gratuito para estudios
+        de arquitectura, especificadores y desarrolladores.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container doc-section">
+      <header class="reveal">
+        <p class="eyebrow">Qué incluye el kit</p>
+        <h2 class="section__title">Tres líneas, tres muestras.</h2>
+      </header>
+
+      <div class="cert-grid">
+        <article class="cert-card reveal">
+          <span class="cert__mark">L</span>
+          <h3>Norwood Linear</h3>
+          <p>Pieza de MDF texturizado <strong>FibraPan Tex</strong> (terminología
+            de Finsa: “tablero de fibras de madera con tecnología que permite
+            aplicar una textura en relieve en superficie”). Lacado RAL bajo
+            demanda.</p>
+        </article>
+        <article class="cert-card reveal">
+          <span class="cert__mark">H</span>
+          <h3>Norwood Heritage</h3>
+          <p>Pieza de chapa natural sobre <strong>FibraPan Natur Tex</strong>.
+            Especies estándar publicadas por Finsa: <strong>Roble Rigato</strong>
+            y <strong>Nogal Merlot</strong>. Otras especies bajo demanda.</p>
+        </article>
+        <article class="cert-card reveal">
+          <span class="cert__mark">A</span>
+          <h3>Norwood Aegis</h3>
+          <p>Pieza de <strong>Finsa Infinite Tricoya</strong> con cuatro acabados
+            disponibles según Finsa: Mojave, Fuji, Yute y Carved. Apto para
+            entornos de alta humedad.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container grid-2 grid-2--contact">
+      <div class="reveal">
+        <p class="eyebrow">Pedir kit</p>
+        <h2 class="section__title">Cuéntanos a qué dirección lo enviamos.</h2>
+        <p class="lead">
+          Respondemos en menos de 24 horas y enviamos por mensajería en 3-5 días
+          laborables a cualquier dirección dentro del Espacio Económico Europeo.
+        </p>
+        <ul class="contact-info">
+          <li><strong>Email</strong><a href="mailto:samples@norwoodacoustics.com">samples@norwoodacoustics.com</a></li>
+          <li><strong>Coste</strong><span>Gratuito para profesionales del sector</span></li>
+          <li><strong>Plazo</strong><span>3-5 días laborables (UE)</span></li>
+        </ul>
+      </div>
+
+      <form class="form reveal" id="contactForm" novalidate>
+        <div class="form__row">
+          <label for="name">Nombre completo</label>
+          <input type="text" id="name" name="name" required maxlength="80" autocomplete="name" />
+          <small class="form__error" data-for="name"></small>
+        </div>
+        <div class="form__row">
+          <label for="company">Estudio o empresa</label>
+          <input type="text" id="company" name="company" maxlength="100" autocomplete="organization" />
+        </div>
+        <div class="form__row">
+          <label for="email">Email profesional</label>
+          <input type="email" id="email" name="email" required maxlength="120" autocomplete="email" />
+          <small class="form__error" data-for="email"></small>
+        </div>
+        <div class="form__row">
+          <label for="message">Líneas de interés y dirección de envío</label>
+          <textarea id="message" name="message" rows="5" required maxlength="1000" placeholder="Ej.: Linear (RAL 9016) y Heritage (Roble Rigato). Calle..."></textarea>
+          <small class="form__error" data-for="message"></small>
+        </div>
+        <div class="form__hp" aria-hidden="true">
+          <label>No rellenar</label>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar petición</button>
+        <p class="form__success" id="formSuccess" hidden>Petición recibida. Te contactaremos en menos de 24 horas.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">N</span>
+        <span class="nav__logo-text">NORWOOD<small>ACOUSTICS</small></span>
+        <p>Paneles acústicos sostenibles para arquitectura premium.</p>
+      </div>
+      <div class="footer__about">
+        <h4>Acerca de nosotros</h4>
+        <p>Norwood Acoustics fabrica sobre tableros y chapa de madera de <strong>Finsa</strong>, referente europeo en madera técnica sostenible.</p>
+      </div>
+      <div class="footer__cols">
+        <div><h4>Empresa</h4><a href="index.html#solucion">Soluciones</a><a href="index.html#productos">Productos</a><a href="certificaciones.html">Certificaciones</a><a href="proceso.html">Proceso</a></div>
+        <div><h4>Recursos</h4><a href="casos.html">Casos por sector</a><a href="contacto.html">Contacto</a><a href="solicitar-muestra.html">Solicitar muestra</a></div>
+        <div><h4>Legal</h4><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>© <span id="year"></span> Norwood Acoustics. Todos los derechos reservados.</span>
+      <span>Designed in Europe · Made with FSC® wood</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
